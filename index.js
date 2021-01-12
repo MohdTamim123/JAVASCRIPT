@@ -230,7 +230,7 @@ for(let i = 1; i <= 10; i++){
     console.log(` ${a} x ${i} = ${a*i} `)
 }
 */
-
+/*
 console.log("DETECTING ODD NUMBER IN AN ARRAY")
 
 let a = [10,29,38,47,53,65,70,82,93,100]
@@ -239,3 +239,23 @@ for (i = 0; i<a.length; i++){
         console.log(a[i])
     }
 }
+*/
+
+
+//ARRAY ......
+/*
+let fruits = ["apple","orange","mango"]
+fruits[0] = "grapes"
+console.log(fruits)
+
+*/
+/*
+let a = [1,"apple",-1,0.5,true]
+console.log(a)
+*/
+
+let fruits = ["apple","orange","mango"]
+let allfruits = ["apple",...fruits,"watermelon"]
+allfruits[1] = "strawberry"
+console.log(allfruits)
+
