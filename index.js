@@ -403,3 +403,69 @@ let a = JSON.parse(studentstring)
 console.log(a)
 */
 
+//FUNCTION
+/*
+
+function welcomeUser(name,number){
+    console.log(`Hello ${name}, welcome to our website`)
+    console.log(`you are visitor number ${number}`)
+}
+
+welcomeUser("Tamim",1)
+*/
+
+/*
+function areaofcircle(r){
+    let pi = Math.PI
+    let Area = pi*(r**2)
+    console.log(`Area of circle is ${Area}`)
+    return Area
+}
+
+let circle = areaofcircle(2)
+console.log(circle)
+*/
+/*
+
+function totalmarks(phy,chem,maths){
+    let total = phy + chem + maths
+    return total
+}
+
+
+function percentage(total){
+    let percent = total / 400 * 100
+    return percent
+}
+let marks = totalmarks(100,100,100)
+console.log(marks)
+let percentile = percentage(marks)
+console.log(percentile)
+
+*/
+//OR
+/*
+function totalmarks(phy,chem,maths){
+    let total = phy + chem + maths
+    return total
+}
+
+let marks = totalmarks(100,200,250)
+console.log(marks)
+
+function percentage(){
+    let percent = marks / 600 * 100
+    return percent
+}
+
+let percentile = percentage()
+console.log(percentile)
+*/
+
+
+console.log("FUNCTION EXPRESSION")
+
+let sum = function(a,b){
+    return a + b
+}
+console.log(sum(1,2))
