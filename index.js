@@ -253,9 +253,153 @@ console.log(fruits)
 let a = [1,"apple",-1,0.5,true]
 console.log(a)
 */
-
+/*
 let fruits = ["apple","orange","mango"]
 let allfruits = ["apple",...fruits,"watermelon"]
 allfruits[1] = "strawberry"
 console.log(allfruits)
+*/
+/*
+let fruits = ["apple","orange","mango"]
+for (let fruit of fruits){
+    console.log(fruit)
+}
+
+
+console.log("DETECTING ODD NUMBERS")
+
+let a = [12,45,32,56,78,65,47,95,75,17]
+for(i=0;i<a.length;i++){
+    if(a[i]%2==1){
+        console.log(a[i])
+    }
+}
+
+console.log("DETECTING EVEN NUMBERS")
+
+let a = [12,45,32,56,78,65,47,95,75,17]
+for(i=0;i<a.length;i++){
+    if(a[i]%2==0){
+        console.log(a[i])
+    }
+}
+*/
+
+/*
+
+let fruits = ["apple","orange","mango"]
+fruits.push("grapes")
+let shiftedfruit = fruits.shift()
+let poppedfruits = fruits.pop()
+
+fruits.unshift("Apple")
+
+console.log(fruits)
+console.log(poppedfruits)
+*/
+/*
+let fruits = ["apple","orange","mango"]
+
+let a = fruits.splice(fruits.indexOf("orange"),2)
+
+console.log(a)
+console.log(fruits)
+
+*/
+/*
+let a =[1,2,3,4,5,6]
+let b =[7,8,9,10,11,12]
+let fruits = ["apple","orange","mango"]
+let c = fruits.concat(a).concat(b)
+console.log(c)
+*/
+/*
+let b =[7,8,9,10,11,12]
+b.reverse()
+console.log(b)
+*/
+
+/*
+let fruits = ["apple","orange","mango"]
+fruit = fruits.join("")
+console.log(fruit)
+*/
+
+/*
+let a = "tamim"
+a = a.split("")
+a.reverse()
+a = a.join("")
+console.log(a)
+
+*/
+
+
+/*
+let studentdetails ={
+    class : 12,
+    contact_no : "9369966943",
+    email : "mohdtamim5035323@gmail.com",
+}
+
+let student = {
+    name : "Tamim",
+    score : 94,
+    roll_no : "23603171",
+    details : studentdetails
+}
+
+
+console.log(student)
+*/
+/*
+
+let student = {
+    name : "Tamim",
+    score : 94,
+    roll_no : "23603171",
+}
+
+student.score = 99
+console.log(student)
+student.score = 94
+console.log(student)
+
+*/
+
+/*
+let student = {
+    name : "Tamim",
+    score : 94,
+    roll_no : "23603171",
+}
+
+console.log(delete student.tamim)
+
+if (student.score){
+    console.log(student.score)
+}
+else{
+    console.log("Property does not exist")
+}*/
+
+/*
+let student = {
+    name : "Tamim",
+    score : 94,
+    roll_no : "23603171",
+}
+
+let studentstring = JSON.stringify(student)
+console.log(student)
+console.log(studentstring)
+
+console.log(typeof(student))
+console.log(typeof(studentstring))
+
+//to convert string back to object 
+
+let a = JSON.parse(studentstring)
+console.log(a)
+*/
 
