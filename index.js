@@ -462,10 +462,198 @@ let percentile = percentage()
 console.log(percentile)
 */
 
-
+/*
 console.log("FUNCTION EXPRESSION")
 
 let sum = function(a,b){
     return a + b
 }
 console.log(sum(1,2))
+
+*/
+
+/*
+//ARROW FUNCTION
+let hello = () =>{
+    console.log("hello world")
+}
+hello()
+
+//OR
+
+let hi = () => "hi there"
+
+console.log(hi())
+
+function avg(a,b,c){
+    return (a+b+c)/3
+}
+let average = avg(10,20,30)
+console.log(average)
+
+*/
+
+/*
+
+let student = {
+    name : "Tamim",
+    score : 94,
+    hi : function(){
+        console.log("Hi there "+this.name)
+    }
+}
+
+//to access a mehtod
+student.hi()
+
+
+function product(){
+    let price = 100
+    return price
+}
+console.log(product())
+*/
+//Lexical scope
+
+/*
+function product(){
+    let MRP = 300
+    function price(){
+        console.log(MRP)
+    }
+    price()
+}
+product()
+*/
+
+//Callbacks
+/*
+function hi(){
+    console.log("hello")
+}
+function twice(f){
+    f()
+    f()
+}
+twice(hi)
+*/
+/*
+let bmi = (w,h) => w / (h**2)
+console.log(bmi(70,150))
+
+let tax = (salary,rate) => salary*rate /100
+
+let calculatesalary = (hours_worked,hourly_rate,TaxFunction) =>{
+    let salary = hourly_rate*hours_worked
+    let taxpaid = TaxFunction(salary,30)
+    let salaryAftertax = salary - taxpaid
+    console.log("Total salary before tax: "+salary)
+    console.log("Total tax paid: "+taxpaid)
+    console.log("Total salary in hand: "+salaryAftertax)
+}
+calculatesalary(40,100,tax)
+
+let account_balance = 1000
+let account_number = 12345
+let total_ammount = 0
+
+function deposit(deposited_amount){
+    total_ammount = account_balance + deposited_amount
+    console.log("Ammount deposited : "+deposited_amount)
+    console.log("Total ammount : "+ total_ammount)
+}
+
+function withdraw(withdrawn_ammount){
+    if (account_balance >= withdrawn_ammount){
+        total_ammount = account_balance - withdrawn_ammount
+        console.log("Ammount withdrawned : "+withdrawn_ammount)
+        console.log("Total ammount : ",+total_ammount)
+    }
+    else{
+        console.log("Aap kangaal ho chuke afsos kriye.")
+    }
+}*/
+
+//To access all the sibling at once.
+/*
+let current = document.querySelector("li")
+let nextsibling = current.nextElementSibling
+console.log(current)
+while(nextsibling){
+     console.log(nextsibling)
+     nextsibling = nextsibling.nextElementSibling
+}
+*/
+/*
+
+//Creating an element using js
+
+let address = document.createElement("div")
+address.innerHTML = "<b><h2>ADDRESS</h2><br><i>B-503 , ASMITA ELEGANCE ,<br> NAYA NAGAR , MIRA ROAD EAST</i></b>"
+document.body.appendChild(address)
+
+let items = document.createElement("li")
+items.innerHTML = "<li>Item1</li><li>Item2</li><li>Item3</li><li>Item4</li>"
+let list = document.querySelector("ul")
+
+*/
+
+
+//FRAGMENT
+/*
+let fragment = new DocumentFragment()
+let heading = document.createElement("h1")
+heading.innerHTML = "Main Heading"
+
+fragment.appendChild(heading)
+document.body.appendChild(fragment)
+*/
+
+/*
+//INSERT BEFORE
+
+let parentNode = document.querySelector("ul")
+let Node = document.querySelector("li")
+let existingNode = Node.nextSibling
+console.log(existingNode)
+
+let newNode = document.createElement("li")
+newNode.innerHTML = "Cold Drink"
+parentNode.insertBefore(newNode,existingNode)
+
+*/
+/*
+let parentNode = document.querySelector("ul")
+
+let item1 = document.createElement("li")
+item1.innerHTML = "Cold Drink"
+
+let item2 = document.createElement("li")
+item2.innerHTML = "Pizza"
+
+let item3 = document.createElement("li")
+item3.innerHTML = "Burger"
+
+parentNode.append(item1,item2,item3)
+//parentNode.prepend(item1,item2,item3)
+
+*/
+/*
+let parentNode = document.querySelector("ul")
+let ClonedNode = parentNode.cloneNode(true)
+
+document.body.appendChild(ClonedNode)
+
+*/
+
+/*
+let heading = document.querySelector("h1")
+if ( heading.hasAttribute("id") ){
+    console.log(heading.getAttribute("id"))
+}
+else{
+    console.log("Aisa kuch nhi hai")
+}
+*/
+
+

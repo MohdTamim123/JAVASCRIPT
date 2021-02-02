@@ -1,0 +1,51 @@
+div{
+    color: red;
+    font-weight: bold;
+    font-family: algerian;
+}
+#box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    animation-name: anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim{
+    0%{
+        top: 10px;
+        left: 210px;
+    }
+    25%{
+        top: 10px;
+        left: 710px;
+        height: 30px;
+        width: 30px;
+        transform: rotate(90deg);
+        background-color:yellow;
+    }
+    50%{
+        top: 510px;
+        left: 710px;
+        height: 40px;
+        width: 40px;
+        transform: rotate(180deg);
+        background-color: darkblue;
+    }
+    75%{
+        top: 510px;
+        left: 210px;
+        height: 50px;
+        width: 50px;
+        transform: rotate(270deg);
+        background-color: rgb(0, 255, 8);
+    }
+    100%{
+        top: 10px;
+        left: 210px;
+        transform: rotate(360deg);
+    }
+    
+}
