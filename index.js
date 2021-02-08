@@ -655,5 +655,38 @@ else{
     console.log("Aisa kuch nhi hai")
 }
 */
+/*
+//Adding attribute properties using setAttribbute mehtod
+let heading = document.querySelector("h1")
+heading.setAttribute("class","gtas")
+*/
+/*
+
+function hello(){
+    console.log("Hello world!!!")
+}
+
+let element = document.querySelector("h1")
+element.addEventListener('click', function(){
+    this.innerHTML='Magic'
+})
+
+*/
+/*
+let element = document.querySelector("h1")
+element.addEventListener('mouseover', function(){
+    this.innerHTML='Magic'
+})
+element.addEventListener('mouseout', function(){
+    this.innerHTML='Heading'
+})
+element.addEventListener('click', function(){
+    this.innerHTML='This is a heading'
+})
+*/
+
+let heading =document.createElement("h1")
+heading.innerHTML = "this is a heading"
+document.body.appendChild(heading)
 
 
